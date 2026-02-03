@@ -63,7 +63,7 @@ export default function About() {
 
   return (
     <div className="h-fit relative pt-4 px-2 xl:px-20  ">
-      <div className="about flex flex-wrap text-white tracking-wide xl:tracking-[.5rem]  text-[2.7rem] sm:text-[4.3rem] md:text-[6rem] lg:text-[5.5rem] xl:text-[6.7rem]  leading-[3rem] md:leading-[5rem] font-clash font-bold mt-16">
+      <div className="about flex flex-wrap text-white tracking-wide xl:tracking-[.5rem]  text-[2.7rem] sm:text-[4.3rem] md:text-[6rem] lg:text-[5.5rem] xl:text-[6.7rem]  leading-[3.5rem] md:leading-[6.5rem] xl:leading-[7.5rem] font-clash font-bold mt-16">
         <span>You might be</span>
         <span>Thinking what is</span>
         <span
@@ -108,9 +108,9 @@ export default function About() {
           className="abvideo w-full md:w-[24rem] xl:w-[28rem] h-[15rem] md:h-[18rem] object-cover rounded-2xl border border-gray/50 xl:mr-10"
         ></video>
       </div>
-      <div className="absolute font-clash font-bold text-white">
-        <span className="flex gap-6 text-[3.3rem] sm:text-[4rem] md:text-[4.5rem] lg:text-[5rem] xl:text-[5.5rem]">
-          About <Navlink name={"NSS CE"} link={"/#about"} />{" "}
+      <div className="relative mt-20 font-clash font-bold text-white">
+        <span className="flex gap-3 text-[3.3rem] sm:text-[4rem] md:text-[4.5rem] lg:text-[5rem] xl:text-[5.5rem]">
+          About <Navlink name={"NSSCE"} link={"/#about"} />{" "}
         </span>
       </div>
       <div
