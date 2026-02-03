@@ -63,29 +63,32 @@ export default function MyApp({ Component, pageProps }) {
     };
   }, []);
 
-  if (initialLoading) {
-    return <InitialLoader />;
-  }
-
   return (
     <>
       <Head>
         <link rel="shortcut icon" href="/STACS-Logo.svg" type="image/svg+xml" />
+        <title>SOLASTA '26</title>
       </Head>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 0.5 }}
-      >
-        <main
-          className={`${font_chakra.variable} ${font_clash_display.variable} ${font_ibm.variable} ${font_bebas.variable}`}
-        >
-          <Component {...pageProps} />
-          <Analytics />
-        </main>
-      </motion.div>
-      <CustomCursor />
+      {initialLoading ? (
+        <InitialLoader />
+      ) : (
+        <>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <main
+              className={`${font_chakra.variable} ${font_clash_display.variable} ${font_ibm.variable} ${font_bebas.variable}`}
+            >
+              <Component {...pageProps} />
+              <Analytics />
+            </main>
+          </motion.div>
+          <CustomCursor />
+        </>
+      )}
     </>
   );
 }

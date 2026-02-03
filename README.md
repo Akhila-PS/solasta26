@@ -1,39 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Solasta '26
 
-## Getting Started
+Welcome to the official repository for **Solasta '26**, the annual technical fest organized by the Computer Science Department. This website serves as the central hub for all event details, schedules, and registrations.
 
-First, run the development server:
+## 🚀 About The Project
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Solasta '26 is designed to bring together technology enthusiasts, competitive coders, and creative minds. The platform provides a seamless experience for participants to explore events, view schedules, and register for various competitions.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Key Features
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- **Event Showcase:** Detailed sections for each technical and cultural event.
+- **Dynamic Content:** Real-time updates on event timings, venues, and rules.
+- **Responsive Design:** Optimized for a smooth experience across all devices (Mobile, Tablet, Desktop).
+- **Interactive UI:** Built with modern animations using Framer Motion and GSAP.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## 📅 Featured Events
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Solasta '26 hosts a variety of exciting events including:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Technical:** CTF, 1 vs 1 Coding, Blind Coding, Tech Quiz, Innovation Auction
+- **Gaming:** Efootball, Lan Gaming
+- **Creative & Fun:** Reel Making, Zine Workshop, Murder Mystery, Wikichase
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## View our live website @ [solasta.in](https://solastadev.vercel.app)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# solasta
+<p align="center">
+  Built with ❤️ by the Solasta '26 Tech Team
+</p>

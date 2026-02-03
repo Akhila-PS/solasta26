@@ -7,9 +7,6 @@ export default function CustomCursor() {
   const [isHovering, setIsHovering] = useState(false);
 
   useEffect(() => {
-    // Hide default cursor
-    document.body.style.cursor = 'none';
-
     const cursor = cursorRef.current;
     const follower = followerRef.current;
 
@@ -66,7 +63,6 @@ export default function CustomCursor() {
     loop();
 
     return () => {
-      document.body.style.cursor = 'auto';
       window.removeEventListener('mousemove', onMouseMove);
       window.removeEventListener('mouseover', handleMouseOver);
     };
@@ -101,17 +97,19 @@ export default function CustomCursor() {
     <>
       <div 
         ref={cursorRef} 
-        className="fixed top-0 left-0 w-[8px] h-[8px] bg-white rounded-full z-[9999] pointer-events-none -translate-x-1/2 -translate-y-1/2 mix-blend-difference"
+        className="hidden lg:block fixed top-0 left-0 w-[8px] h-[8px] bg-white rounded-full z-[9999] pointer-events-none -translate-x-1/2 -translate-y-1/2 mix-blend-difference"
       />
       <div 
         ref={followerRef} 
-        className="fixed top-0 left-0 w-[40px] h-[40px] border border-main_primary/50 rounded-full z-[9998] pointer-events-none -translate-x-1/2 -translate-y-1/2 transition-colors duration-300"
+        className="hidden lg:block fixed top-0 left-0 w-[40px] h-[40px] border border-main_primary/50 rounded-full z-[9998] pointer-events-none -translate-x-1/2 -translate-y-1/2 transition-colors duration-300"
       />
       
       {/* Global Style to force hide default cursor on interactive elements */}
       <style jsx global>{`
-        a, button, [role="button"], input, label, select, textarea {
-          cursor: none !important;
+        @media (min-width: 1024px) {
+          body, a, button, [role="button"], input, label, select, textarea {
+            cursor: none !important;
+          }
         }
       `}</style>
     </>
