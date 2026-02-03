@@ -90,7 +90,7 @@ export default function Events({ posts, names }) {
 }
 
 export async function getStaticProps() {
-  const filePath = path.join(process.cwd(), "/events.json");
+  const filePath = path.join(process.cwd(), "/data.json");
   const jsonData = await fsPromises.readFile(filePath);
   const objectData = JSON.parse(jsonData);
 

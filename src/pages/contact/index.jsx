@@ -22,7 +22,7 @@ export default function Contact(props) {
   return (
     <div className="h-fit w-screen bg-black">
       <Head>
-        <title>Darpan23 - Contact</title>
+        <title>Solasta</title>
       </Head>
       <Header id="Navbar" />
       {/* <progress max="100" value="0"></progress> */}

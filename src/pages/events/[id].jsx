@@ -187,7 +187,7 @@ function EventsDetails(props) {
 }
 
 export async function getStaticPaths() {
-  const filePath = path.join(process.cwd(), "/events.json");
+  const filePath = path.join(process.cwd(), "/data.json");
   const jsonData = await fsPromises.readFile(filePath);
   const objectData = JSON.parse(jsonData);
 
@@ -205,7 +205,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps(context) {
-  const filePath = path.join(process.cwd(), "/events.json");
+  const filePath = path.join(process.cwd(), "/data.json");
   const jsonData = await fsPromises.readFile(filePath);
   const objectData = JSON.parse(jsonData);
 

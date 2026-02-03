@@ -75,22 +75,38 @@ export default function About() {
         <span className="text-[3.7rem] sm:text-[5rem] md:text-[7rem] lg:text-[9rem] xl:text-[12rem] md:mt-4 lg:mt-8">
           ?
         </span>
+
       </div>
-      <div className="font-chakra text-base py-8 leading-[5px] xl:mt-4">
-        <span
-          ref={aboutdarpan}
-          className="text-base font-medium text-white xl:text-xl"
-        >
-          <b>{siteConfig.eventName}'{siteConfig.eventYear.slice(2)}</b> the annual techno - cultural fest organized by
-          the {siteConfig.collegeName} of {siteConfig.fullCollegeName}, is an exciting event that celebrates
-          the technical expertise and artistic talents of aspiring engineers.
-          element. The <b>three-day</b>{" "}
-          mega event is a visual treat for attendees, transporting them to
-          another world with a variety of captivating performances by aspiring
-          engineers and artists. From technical competitions to cultural events{" "}
-          <b>{siteConfig.eventName}'{siteConfig.eventYear.slice(2)}</b> offers a diverse range of activities that cater to
-          everyone's interests.
-        </span>
+      <div className="flex flex-col xl:flex-row items-center justify-between gap-8 mt-8">
+        <div className="font-chakra text-base leading-[5px] xl:mt-4 w-full xl:w-2/3">
+          <span
+            ref={aboutdarpan}
+            className="text-base font-medium text-white xl:text-xl"
+          >
+            <b>
+              {siteConfig.eventName}'{siteConfig.eventYear.slice(2)}
+            </b>{" "}
+            the annual techno - cultural fest organized by the {siteConfig.collegeName}{" "}
+            of {siteConfig.fullCollegeName}, is an exciting event that celebrates
+            the technical expertise and artistic talents of aspiring engineers.
+            element. The <b>three-day</b> mega event is a visual treat for
+            attendees, transporting them to another world with a variety of
+            captivating performances by aspiring engineers and artists. From
+            technical competitions to cultural events{" "}
+            <b>
+              {siteConfig.eventName}'{siteConfig.eventYear.slice(2)}
+            </b>{" "}
+            offers a diverse range of activities that cater to everyone's
+            interests.
+          </span>
+        </div>
+        <video
+          src="/About.mp4"
+          autoPlay
+          loop
+          muted
+          className="abvideo w-full md:w-[24rem] xl:w-[28rem] h-[15rem] md:h-[18rem] object-cover rounded-2xl border border-gray/50 xl:mr-10"
+        ></video>
       </div>
       <div className="absolute font-clash font-bold text-white">
         <span className="flex gap-6 text-[3.3rem] sm:text-[4rem] md:text-[4.5rem] lg:text-[5rem] xl:text-[5.5rem]">
@@ -106,14 +122,6 @@ export default function About() {
           It provides quality education and fosters innovation among its students.
           We are dedicated to excellence in education, research, and development.
         </p>
-
-        <video
-          src="/About.mp4"
-          autoPlay
-          loop
-          muted
-          className="abvideo w-[22rem] h-[20rem] md:w-[24rem] xl:w-[28rem] xl:h-[18rem] object-cover rounded-2xl border border-gray/50"
-        ></video>
       </div>
     </div>
   );

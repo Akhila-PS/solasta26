@@ -1,5 +1,5 @@
 {
-  "name": "darpan",
+  "name": "solasta",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -28,7 +28,8 @@
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1",
     "swiper": "^9.2.3",
-    "vanilla-tilt": "^1.8.0"
+    "vanilla-tilt": "^1.8.0",
+    "yarn": "^1.22.22"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
