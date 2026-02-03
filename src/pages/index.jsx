@@ -15,6 +15,7 @@ import path from "path";
 import RitModel from "@/components/RitModel";
 import EventSlider from "@/components/EventSlider";
 import Partical from "@/components/Partical";
+import Reveal from "@/components/Reveal";
 import { siteConfig } from "@/config/site";
 
 const Home = () => {
@@ -57,24 +58,36 @@ const Home = () => {
         </div>
       </section>
 
-      {isLoaded && <Clock />}
-
-
+      {isLoaded && (
+        <Reveal width="100%">
+          <Clock />
+        </Reveal>
+      )}
 
       <div className="bg-gradient-to-b from-primary to-transparent">
-        <RitModel />
+        <Reveal width="100%">
+          <RitModel />
+        </Reveal>
         <section id="about">
-          <About />
+          <Reveal width="100%">
+            <About />
+          </Reveal>
         </section>
       </div>
 
-      <Marque2 />
-
+      <Reveal width="100%">
+        <Marque2 />
+      </Reveal>
+      
       <section id="faq">
-        <Faq />
+        <Reveal width="100%">
+          <Faq />
+        </Reveal>
       </section>
 
-      <Map />
+      <Reveal width="100%">
+        <Map />
+      </Reveal>
       <Footer />
     </div>
   );

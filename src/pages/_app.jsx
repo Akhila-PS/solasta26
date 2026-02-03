@@ -48,29 +48,21 @@ export default function MyApp({ Component, pageProps }) {
   const [initialLoading, setInitialLoading] = React.useState(true);
 
   React.useEffect(() => {
-    setTimeout(() => {
-      setInitialLoading(false);
-    }, 2700);
+    // Remove timer-based loading
+    // setTimeout(() => {
+    //   setInitialLoading(false);
+    // }, 2700);
 
-    const handleStart = () => {
-      setLoading(true);
-      setTimeout(() => {
-        setLoading(false);
-      }, 2700);
+    const handleLoaderComplete = () => {
+      setInitialLoading(false);
     };
 
-    router.events.on(
-      "routeChangeStart",
-      (url) => url != router.asPath && handleStart()
-    );
+    window.addEventListener('solasta-loader-complete', handleLoaderComplete);
 
     return () => {
-      router.events.off(
-        "routeChangeStart",
-        (url) => url != router.asPath && handleStart()
-      );
+      window.removeEventListener('solasta-loader-complete', handleLoaderComplete);
     };
-  }, [router.asPath, router.events]);
+  }, []);
 
   if (initialLoading) {
     return <InitialLoader />;
@@ -79,7 +71,7 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <link rel="shortcut icon" href="/favicon.ico" type="image/png" />
+        <link rel="shortcut icon" href="/STACS-Logo.svg" type="image/svg+xml" />
       </Head>
       {loading ? (
         <Loader />

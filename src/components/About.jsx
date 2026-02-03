@@ -105,7 +105,7 @@ export default function About() {
           autoPlay
           loop
           muted
-          className="abvideo w-full md:w-[24rem] xl:w-[28rem] h-[15rem] md:h-[18rem] object-cover rounded-2xl border border-gray/50 xl:mr-10"
+          className="abvideo w-full md:w-[24rem] xl:w-[28rem] h-[15rem] md:h-[18rem] object-cover rounded-2xl border border-white/20 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] xl:mr-10"
         ></video>
       </div>
       <div className="relative mt-20 font-clash font-bold text-white">

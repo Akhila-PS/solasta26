@@ -41,7 +41,23 @@ function Navlink(
 
     return (
         <div>
-            <Link href={link} ref={element} data-value={name} onClick={() => setToggle(false)}>
+            <Link 
+                href={link} 
+                ref={element} 
+                data-value={name} 
+                onClick={(e) => {
+                    setToggle(false);
+                    if (link.startsWith('/#') || link.startsWith('#')) {
+                        // Allow time for menu to close or just handle scroll smoothly
+                        const targetId = link.replace(/^\//, '');
+                        const elem = document.querySelector(targetId);
+                        if (elem) {
+                           e.preventDefault();
+                           elem.scrollIntoView({ behavior: 'smooth' });
+                         }
+                    }
+                }}
+            >
                 {name}
             </Link>
         </div>

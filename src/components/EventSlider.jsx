@@ -18,9 +18,9 @@ export default function EventSlider() {
       <div className="flex flex-wrap gap-8 md:gap-16 lg:gap-20 pt-10 items-center justify-center px-10 mt-10">
         <div data-tilt className="w-fit relative scale-105">
           <div className="updown">
-            <div className="flex items-center justify-center w-full h-[22rem] xl:h-[30rem] rounded-sm bg-main_primary/50 backdrop:blur-xl hover:-skew-x-6 skew-y-3 transition-all duration-300 ease-in-out">
-              <div className="w-full h-[22rem] xl:h-[30rem] rounded-sm  bg-gray hover:skew-x-6 hover:scale-105 transition-all duration-300 ease-in-out">
-                <span className="text-3xl font-clash font-semibold px-4 py-2 absolute left-[-2rem] top-4 bg-main_primary text-white">
+            <div className="flex items-center justify-center w-full h-[22rem] xl:h-[30rem] rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 hover:-skew-x-6 skew-y-3 transition-all duration-300 ease-in-out shadow-[0_8px_32px_0_rgba(0,0,0,0.36)]">
+              <div className="w-full h-[22rem] xl:h-[30rem] rounded-3xl bg-black/40 overflow-hidden hover:skew-x-6 hover:scale-105 transition-all duration-300 ease-in-out">
+                <span className="text-3xl font-clash font-semibold px-4 py-2 absolute left-[-2rem] top-4 bg-white/10 backdrop-blur-md border border-white/10 text-white rounded-r-xl">
                   CHIEF GUEST
                 </span>
                 <Image
@@ -36,9 +36,9 @@ export default function EventSlider() {
         </div>
         <div data-tilt className="w-fit relative scale-105">
           <div className="updown">
-            <div className="flex items-center justify-center w-full h-[22rem] xl:h-[30rem] rounded-sm bg-main_primary/50 backdrop:blur-xl hover:-skew-x-6 skew-y-3 transition-all duration-300 ease-in-out">
-              <div className="w-full h-[22rem] xl:h-[30rem] rounded-sm  bg-gray hover:skew-x-6 hover:scale-105 transition-all duration-300 ease-in-out">
-                <span className="text-3xl font-clash font-semibold px-4 py-2 absolute left-[-2rem] top-4 bg-main_primary text-white">
+            <div className="flex items-center justify-center w-full h-[22rem] xl:h-[30rem] rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 hover:-skew-x-6 skew-y-3 transition-all duration-300 ease-in-out shadow-[0_8px_32px_0_rgba(0,0,0,0.36)]">
+              <div className="w-full h-[22rem] xl:h-[30rem] rounded-3xl bg-black/40 overflow-hidden hover:skew-x-6 hover:scale-105 transition-all duration-300 ease-in-out">
+                <span className="text-3xl font-clash font-semibold px-4 py-2 absolute left-[-2rem] top-4 bg-white/10 backdrop-blur-md border border-white/10 text-white rounded-r-xl">
                   DJ NIGHT
                 </span>
                 <Image
@@ -55,9 +55,9 @@ export default function EventSlider() {
 
         <div data-tilt className="w-fit relative scale-105">
           <div className="updown">
-            <div className="flex items-center justify-center w-full h-[22rem] xl:h-[30rem] rounded-sm bg-main_primary/50 backdrop:blur-xl hover:-skew-x-6 skew-y-3 transition-all duration-300 ease-in-out">
-              <div className="w-full h-[22rem] xl:h-[30rem] rounded-sm  bg-gray hover:skew-x-6 hover:scale-105 transition-all duration-300 ease-in-out">
-                <span className="text-3xl font-clash font-semibold px-4 py-2 absolute left-[-2rem] top-4 bg-main_primary text-white">
+            <div className="flex items-center justify-center w-full h-[22rem] xl:h-[30rem] rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 hover:-skew-x-6 skew-y-3 transition-all duration-300 ease-in-out shadow-[0_8px_32px_0_rgba(0,0,0,0.36)]">
+              <div className="w-full h-[22rem] xl:h-[30rem] rounded-3xl bg-black/40 overflow-hidden hover:skew-x-6 hover:scale-105 transition-all duration-300 ease-in-out">
+                <span className="text-3xl font-clash font-semibold px-4 py-2 absolute left-[-2rem] top-4 bg-white/10 backdrop-blur-md border border-white/10 text-white rounded-r-xl">
                   PRO SHOW
                 </span>
                 <Image
@@ -74,9 +74,9 @@ export default function EventSlider() {
 
         <div data-tilt className="w-fit relative scale-105">
           <div className="updown">
-            <div className="flex items-center justify-center w-full h-[22rem] xl:h-[30rem] rounded-sm bg-main_primary/50 backdrop:blur-xl hover:-skew-x-6 skew-y-3 transition-all duration-300 ease-in-out">
-              <div className="w-full h-[22rem] xl:h-[30rem] rounded-sm  bg-gray hover:skew-x-6 hover:scale-105 transition-all duration-300 ease-in-out">
-                <span className="text-3xl font-clash font-semibold px-4 py-2 absolute left-[-2rem] top-4 bg-main_primary text-white">
+            <div className="flex items-center justify-center w-full h-[22rem] xl:h-[30rem] rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 hover:-skew-x-6 skew-y-3 transition-all duration-300 ease-in-out shadow-[0_8px_32px_0_rgba(0,0,0,0.36)]">
+              <div className="w-full h-[22rem] xl:h-[30rem] rounded-3xl bg-black/40 overflow-hidden hover:skew-x-6 hover:scale-105 transition-all duration-300 ease-in-out">
+                <span className="text-3xl font-clash font-semibold px-4 py-2 absolute left-[-2rem] top-4 bg-white/10 backdrop-blur-md border border-white/10 text-white rounded-r-xl">
                   SPIRE TALK
                 </span>
                 <Image
@@ -93,9 +93,9 @@ export default function EventSlider() {
 
         <div data-tilt className="w-fit relative scale-105">
           <div className="updown">
-            <div className="flex items-center justify-center w-[15rem] lg:w-full h-[22rem] xl:h-[30rem] rounded-sm bg-main_primary/50 backdrop:blur-xl hover:-skew-x-6 skew-y-3 transition-all duration-300 ease-in-out">
-              <div className="w-[15rem] lg:w-full h-[22rem] xl:h-[30rem] rounded-sm  bg-gray hover:skew-x-6 hover:scale-105 transition-all duration-300 ease-in-out">
-                <span className="text-3xl font-clash font-semibold px-4 py-2 absolute left-[-2rem] top-4 bg-main_primary text-white">
+            <div className="flex items-center justify-center w-[15rem] lg:w-full h-[22rem] xl:h-[30rem] rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 hover:-skew-x-6 skew-y-3 transition-all duration-300 ease-in-out shadow-[0_8px_32px_0_rgba(0,0,0,0.36)]">
+              <div className="w-[15rem] lg:w-full h-[22rem] xl:h-[30rem] rounded-3xl bg-black/40 overflow-hidden hover:skew-x-6 hover:scale-105 transition-all duration-300 ease-in-out">
+                <span className="text-3xl font-clash font-semibold px-4 py-2 absolute left-[-2rem] top-4 bg-white/10 backdrop-blur-md border border-white/10 text-white rounded-r-xl">
                   TALK SHOW
                 </span>
                 <Image

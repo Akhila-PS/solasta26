@@ -10,7 +10,7 @@ export default function Gallery() {
         alt='Picture of the author'
         width={500}
         height={500}
-        className='mt-4 w-[100%] align-middle'
+        className='mt-4 w-[100%] align-middle rounded-2xl border border-white/20 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)]'
       />
       </div>
     </div>

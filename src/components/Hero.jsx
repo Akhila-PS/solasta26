@@ -75,7 +75,7 @@ function Hero() {
 
       <div
         ref={date}
-        className="relative md:ml-10 opacity-0 flex flex-col font-bold bg-white w-fit text-xl rounded-md text-black p-2 pr-8 ml-[1.5rem] md:text-3xl  z-10"
+        className="relative md:ml-10 opacity-0 flex flex-col font-bold bg-black/60 backdrop-blur-[20px] saturate-150 border border-white/20 w-fit text-xl rounded-[2rem] text-white p-6 pr-10 ml-[1.5rem] md:text-3xl z-10 shadow-[0_20px_50px_rgba(0,0,0,0.5)]"
       >
         <span className="font-chakra">
           {siteConfig.eventYear} <span className="font-clash">{siteConfig.eventDate.month}</span>
