@@ -23,7 +23,7 @@ Solasta '26 hosts a variety of exciting events including:
 
 ---
 
-## View our live website @ [solasta.in](https://solastadev.vercel.app)
+## View our live website @ [solastadev.vercel.app](https://solastadev.vercel.app)
 
 <p align="center">
   Built with ❤️ by the Solasta '26 Tech Team
