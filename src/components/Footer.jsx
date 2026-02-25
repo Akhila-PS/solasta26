@@ -40,8 +40,8 @@ export default function Footer() {
               <Navlink name={"Brochure"} link={"/Brochure.pdf"} />
             </div>
             <div className="flex flex-col gap-2">
-              <Navlink name={"Team"} link={"/teams"} />
-              <Navlink name={"Contact"} link={"/contact"} />
+              <Navlink name={"FAQ"} link={"/#faq"} />
+              <Navlink name={"Connect"} link={"/#connect"} />
               <Navlink name={"Sponsors"} link={"/#sponsor-pitch"} />
               <Navlink name={"Legacy"} link={"/#legacy-section"} />
             </div>

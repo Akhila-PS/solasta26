@@ -92,7 +92,7 @@ function FlipDigit({ value, label }) {
 
 function Separator() {
   return (
-    <div className="flex flex-col items-center justify-center gap-2 sm:gap-3 pt-2 sm:pt-0">
+    <div className="flex flex-col items-center justify-center gap-2 sm:gap-3 h-[5.5rem] sm:h-[6.5rem] md:h-[7.5rem] lg:h-[8.5rem] mb-[1.25rem]">
       <motion.div
         animate={{ opacity: [0.2, 1, 0.2] }}
         transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
@@ -193,7 +193,7 @@ function Clock() {
           </div>
 
           {/* Countdown digits */}
-          <div className="flex items-start gap-2 sm:gap-3 md:gap-4 lg:gap-5 justify-center">
+          <div className="flex items-start gap-3 sm:gap-4 md:gap-5 lg:gap-6 justify-center">
             <FlipDigit value={timeLeft.days} label="Days" />
             <Separator />
             <FlipDigit value={timeLeft.hours} label="Hours" />

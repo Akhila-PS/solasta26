@@ -141,10 +141,12 @@ const Home = () => {
         </Reveal>
       </section>
 
-      {/* ═══════════════ MAP ═══════════════ */}
-      <Reveal width="100%">
-        <Map />
-      </Reveal>
+      {/* ═══════════════ CONTACT CTA ═══════════════ */}
+      <div className="bg-gradient-to-b from-transparent via-primary/20 to-transparent">
+        <Reveal width="100%">
+          <Map />
+        </Reveal>
+      </div>
 
       {/* ═══════════════ FOOTER ═══════════════ */}
       <Footer />

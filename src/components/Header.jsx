@@ -25,7 +25,7 @@ export default function Header() {
     { name: "LEGACY", link: "/#legacy-section", page: "06" },
     { name: "FAQ", link: "/#faq", page: "07" },
     { name: "BROCHURE", link: "/Brochure.pdf", page: "08" },
-    { name: "TEAMS", link: "/teams", page: "09" },
+    { name: "CONTACT", link: "/#connect", page: "09" },
   ];
 
   return (

@@ -7,31 +7,41 @@ export default function InitialLoader() {
 
   useEffect(() => {
     const bootSequence = [
-    "Initializing Solasta Kernal v26.0...",
-    "Loading modules...",
-    "> [OK] Graphics Engine",
-    "> [OK] Physics Engine",
-    "> [OK] Sound System",
-    "Allocating memory...",
-    "Checking dependencies...",
-    "> [OK] React.js",
-    "> [OK] Next.js",
-    "> [OK] Three.js",
-    "Establishing secure connection...",
-    "Accessing Mainframe...",
-    "System Ready.",
-  ];
+      "Initializing Solasta Kernal v26.0...",
+      "Loading modules...",
+      "> [OK] Graphics Engine",
+      "> [OK] Physics Engine",
+      "> [OK] Sound System",
+      "Allocating memory...",
+      "Checking dependencies...",
+      "> [OK] React.js",
+      "> [OK] Next.js",
+      "> [OK] Three.js",
+      "Establishing secure connection...",
+      "Accessing Mainframe...",
+      "System Ready.",
+    ];
 
+    // Reset state on re-mount (React StrictMode)
+    setLogs([]);
+    setIsReady(false);
+
+    const timeoutIds = [];
     let delay = 0;
     bootSequence.forEach((log, index) => {
       delay += Math.random() * 300 + 100;
-      setTimeout(() => {
+      const id = setTimeout(() => {
         setLogs(prev => [...prev, log]);
         if (index === bootSequence.length - 1) {
           setIsReady(true);
         }
       }, delay);
+      timeoutIds.push(id);
     });
+
+    return () => {
+      timeoutIds.forEach(id => clearTimeout(id));
+    };
   }, []);
 
   useEffect(() => {
