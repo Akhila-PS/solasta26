@@ -3,12 +3,10 @@ import Link from "next/link";
 
 import { Slant as Hamburger } from "hamburger-react";
 import { motion, AnimatePresence } from "framer-motion";
-// import { useAuthContext } from "@/context/auth-context";
 import Navlink from "@/components/Navlink";
 
 export default function Header() {
   const [isOpen, setOpen] = React.useState(false);
-  // const { signInWithGoogle, appState, signOut } = useAuthContext();
 
   React.useEffect(() => {
     if (isOpen) {
@@ -17,6 +15,18 @@ export default function Header() {
       document.body.style.overflow = "unset";
     }
   }, [isOpen]);
+
+  const navItems = [
+    { name: "HOME", link: "/", page: "01" },
+    { name: "EVENTS", link: "/events", page: "02" },
+    { name: "SCHEDULE", link: "/#event-timeline", page: "03" },
+    { name: "ABOUT", link: "/#about", page: "04" },
+    { name: "SPONSORS", link: "/#sponsor-pitch", page: "05" },
+    { name: "LEGACY", link: "/#legacy-section", page: "06" },
+    { name: "FAQ", link: "/#faq", page: "07" },
+    { name: "BROCHURE", link: "/Brochure.pdf", page: "08" },
+    { name: "TEAMS", link: "/teams", page: "09" },
+  ];
 
   return (
     <>
@@ -39,36 +49,11 @@ export default function Header() {
         </div>
 
         <Link
-          className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 hover:scale-110 z-50 transition duration-300  ease-in-out font-clash font-bold text-2xl text-white tracking-wider"
+          className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 hover:scale-110 z-50 transition duration-300 ease-in-out font-clash font-bold text-2xl text-white tracking-wider"
           href="/"
         >
-         Solasta'26
+          Solasta'26
         </Link>
-
-        {/* <div className="absolute right-2 z-[26] hidden md:block">
-          <div className="relative bg-main_primary text-white w-fit text-left pl-4 pr-2 py-1 rounded-[4px]">
-            {appState.userAuth ? (
-              <span
-                className="text-white hover:text-black font-chakra tracking-wide font-bold text-base cursor-pointer transition-all duration-300 ease-in-out"
-                onClick={signOut}>
-                LOG OUT
-              </span>
-            ) : (
-              <span
-                className="text-white hover:text-black font-chakra tracking-wide font-bold text-base cursor-pointer transition-all duration-300 ease-in-out"
-                onClick={signInWithGoogle}>
-                LOG IN
-              </span>
-            )}
-            <Image
-              src="/edgeTriangleSvg.svg"
-              width={20}
-              height={20}
-              alt="edge"
-              className="absolute bottom-[-1px] left-[-2px] mix-blend-multiply"
-            />
-          </div>
-        </div> */}
       </header>
 
       <AnimatePresence>
@@ -96,47 +81,30 @@ export default function Header() {
                 />
                 <div className="ml-4 border-l border-white/10 h-10"></div>
               </div>
-              <div className="text-4xl md:text-5xl font-clash font-black flex flex-col mt-8 ml-8 gap-4 overflow-y-auto">
-                <div className="relative bg-main_primary text-white w-fit text-left pl-2 pr-4 py-1 rounded-[4px]">
-                  <Navlink name={"HOME"} link={"/"} setToggle={setOpen} />
-                  <p className="absolute right-[-2rem] top-[2px] text-[8px] font-bold text-main_primary">
-                    PAGE <br /> 01
-                  </p>
-                </div>
-                <div className="relative hackNav hover:bg-white hover:text-black text-white w-fit text-left pl-2 pr-4 py-1 rounded-[4px]">
-                  <Navlink name={"EVENTS"} link={"/events"} setToggle={setOpen} />
-                  <p className="absolute right-[-2rem] top-[2px] text-[8px] font-bold text-transparent navPageNo">
-                    PAGE <br /> 02
-                  </p>
-                </div>
-                <div className="relative hackNav hover:bg-white hover:text-black text-white w-fit text-left pl-2 pr-4 py-1 rounded-[4px]">
-                  <Navlink name={"ABOUT"} link={"/#about"} setToggle={setOpen} />
-                  <p className="absolute right-[-2rem] top-[2px] text-[8px] font-bold text-transparent navPageNo">
-                    PAGE <br /> 03
-                  </p>
-                </div>
-                <div className="relative hackNav hover:bg-white hover:text-black text-white w-fit text-left pl-2 pr-4 py-1 rounded-[4px]">
-                  <Navlink name={"FAQ"} link={"/#faq"} setToggle={setOpen} />
-                  <p className="absolute right-[-2rem] top-[2px] text-[8px] font-bold text-transparent navPageNo">
-                    PAGE <br /> 04
-                  </p>
-                </div>
-                <div className="relative hackNav hover:bg-white hover:text-black text-white w-fit text-left pl-2 pr-4 py-1 rounded-[4px]">
-                  <Navlink
-                    name={"BROCHURE"}
-                    link={"/Brochure.pdf"}
-                    setToggle={setOpen}
-                  />
-                  <p className="absolute right-[-2rem] top-[2px] text-[8px] font-bold text-transparent navPageNo">
-                    PAGE <br /> 05
-                  </p>
-                </div>
-                <div className="relative hackNav hover:bg-white hover:text-black text-white w-fit text-left pl-2 pr-4 py-1 rounded-[4px]">
-                  <Navlink name={"TEAMS"} link={"/teams"} setToggle={setOpen} />
-                  <p className="absolute right-[-2rem] top-[2px] text-[8px] font-bold text-transparent navPageNo">
-                    PAGE <br /> 06
-                  </p>
-                </div>
+              <div className="text-4xl md:text-5xl font-clash font-black flex flex-col mt-6 ml-8 gap-3 overflow-y-auto pb-8">
+                {navItems.map((item, i) => (
+                  <div
+                    key={item.page}
+                    className={`relative hackNav ${
+                      i === 0
+                        ? "bg-main_primary text-white"
+                        : "hover:bg-white hover:text-black text-white"
+                    } w-fit text-left pl-2 pr-4 py-1 rounded-[4px]`}
+                  >
+                    <Navlink
+                      name={item.name}
+                      link={item.link}
+                      setToggle={setOpen}
+                    />
+                    <p
+                      className={`absolute right-[-2rem] top-[2px] text-[8px] font-bold ${
+                        i === 0 ? "text-main_primary" : "text-transparent navPageNo"
+                      }`}
+                    >
+                      PAGE <br /> {item.page}
+                    </p>
+                  </div>
+                ))}
               </div>
             </div>
           </motion.div>

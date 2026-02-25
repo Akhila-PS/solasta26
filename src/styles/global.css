@@ -4,6 +4,9 @@
 
 :root {
   --soothing-black: "#0E1111";
+  --neon-cyan: #00f0ff;
+  --deep-blue: #020617;
+  --electric-accent: #00f0ff;
 }
 
 html {
@@ -12,11 +15,10 @@ html {
 
 * {
   user-select: none;
-  /* outline: 1px red solid; */
 }
 
 ::selection {
-  background: #00F0FF;
+  background: #00f0ff;
   color: #000;
 }
 
@@ -162,5 +164,145 @@ flex-card-container.active .register {
     width: 80vw;
     height: 100%;
     margin: 0 0 10px 0;
+  }
+}
+
+/* ═══════════════ GLASSMORPHISM UTILITIES ═══════════════ */
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+}
+
+.glass-card-strong {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(30px) saturate(200%);
+  -webkit-backdrop-filter: blur(30px) saturate(200%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1.5rem;
+}
+
+/* ═══════════════ AMBIENT GLOW EFFECTS ═══════════════ */
+
+.glow-cyan {
+  box-shadow: 0 0 40px rgba(0, 240, 255, 0.08), 0 0 80px rgba(0, 240, 255, 0.04);
+}
+
+.glow-cyan-strong {
+  box-shadow: 0 0 30px rgba(0, 240, 255, 0.15), 0 0 60px rgba(0, 240, 255, 0.08),
+    0 0 120px rgba(0, 240, 255, 0.03);
+}
+
+/* ═══════════════ ANIMATED CODE LINES BACKGROUND ═══════════════ */
+
+@keyframes code-scroll {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.15;
+  }
+  90% {
+    opacity: 0.15;
+  }
+  100% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
+
+.code-line {
+  animation: code-scroll 12s linear infinite;
+  opacity: 0;
+}
+
+.code-line:nth-child(1) {
+  animation-delay: 0s;
+}
+.code-line:nth-child(2) {
+  animation-delay: 2s;
+}
+.code-line:nth-child(3) {
+  animation-delay: 4s;
+}
+.code-line:nth-child(4) {
+  animation-delay: 6s;
+}
+.code-line:nth-child(5) {
+  animation-delay: 8s;
+}
+
+/* ═══════════════ GLOWING NODE/DOT ANIMATION ═══════════════ */
+
+@keyframes node-pulse {
+  0%,
+  100% {
+    opacity: 0.2;
+    box-shadow: 0 0 4px rgba(0, 240, 255, 0.2);
+  }
+  50% {
+    opacity: 0.8;
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.6), 0 0 40px rgba(0, 240, 255, 0.3);
+  }
+}
+
+.node-glow {
+  animation: node-pulse 3s ease-in-out infinite;
+}
+
+/* ═══════════════ GRADIENT TEXT UTILITY ═══════════════ */
+
+.text-gradient-cyber {
+  background: linear-gradient(135deg, #00f0ff 0%, #00bfff 50%, #7dd3fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ═══════════════ SCAN LINE EFFECT ═══════════════ */
+
+@keyframes scanline {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+.scanline-overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 240, 255, 0.2),
+    transparent
+  );
+  animation: scanline 6s linear infinite;
+  pointer-events: none;
+}
+
+/* ═══════════════ SMOOTH SECTION TRANSITIONS ═══════════════ */
+
+section {
+  position: relative;
+}
+
+/* ═══════════════ RESPONSIVE IMPROVEMENTS ═══════════════ */
+
+@media (max-width: 640px) {
+  .glass-card,
+  .glass-card-strong {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
   }
 }
