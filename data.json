@@ -7,7 +7,7 @@
       {
         "id": "efootball",
         "title": "Efootball",
-        "img": "/games/cricket.jpg",
+        "img": "/games/football.jpeg",
         "content": "Online Efootball Tournament",
         "description": "Join the ultimate Efootball tournament. Compete with the best and show your skills.",
         "time": "26/02/26 TO 28/02/26",
@@ -27,7 +27,7 @@
       {
         "id": "ctf-intro",
         "title": "CTF Intro",
-        "img": "/general_tech_events/circuit.png",
+        
         "content": "Introduction to Capture The Flag",
         "description": "Learn the basics of CTF and cybersecurity.",
         "time": "4 pm to 6 pm (02/03/26)",
@@ -47,7 +47,7 @@
       {
         "id": "lan-gaming",
         "title": "Lan Gaming",
-        "img": "/games/neon.jpg",
+        "img": "/games/lan.jpeg",
         "content": "Local Area Network Gaming",
         "description": "Experience high-speed low-latency gaming with friends.",
         "time": "4 pm to 6 pm (03/03/26)",
@@ -67,7 +67,7 @@
       {
         "id": "murder-mystery",
         "title": "Murder Mystery",
-        "img": "/general_tech_events/Agents_of_aec.png",
+       
         "content": "Solve the Mystery",
         "description": "Put on your detective hats and solve the crime scene.",
         "time": "4 pm to 6 pm (04/03/26)",
@@ -87,7 +87,7 @@
       {
         "id": "inauguration",
         "title": "Inauguration",
-        "img": "/cultural/Euphoria.png",
+       
         "content": "Solasta'26 Inauguration Ceremony",
         "description": "The official kickoff of Solasta'26.",
         "time": "10 am (06/03/26)",
@@ -107,7 +107,7 @@
       {
         "id": "workshop",
         "title": "Workshop",
-        "img": "/general_tech_events/Best_Manager.png",
+        
         "content": "Technical Workshop",
         "description": "Enhance your skills with our expert-led workshop.",
         "time": "1 pm to 5 pm (06/03/26)",
@@ -127,7 +127,7 @@
       {
         "id": "ctf",
         "title": "CTF",
-        "img": "/general_tech_events/circuit.png",
+        
         "content": "Capture The Flag Competition",
         "description": "Overnight hacking challenge.",
         "time": "6th 7 pm to 7th 7 am",
@@ -147,7 +147,7 @@
       {
         "id": "reel-making",
         "title": "Reel Making",
-        "img": "/cultural/spot.jpg",
+        
         "content": "Reel Making Competition",
         "description": "Create the most engaging reels for Solasta'26.",
         "time": "6th to 8th",
@@ -167,7 +167,7 @@
       {
         "id": "innovation-auction",
         "title": "Innovation Auction",
-        "img": "/general_tech_events/Best_Manager.png",
+        "img": "/general_tech_events/Best_Manager.jpeg",
         "content": "Pitch and Bid",
         "description": "Auction your innovative ideas.",
         "time": "9 am to 12 (07/03/26)",
@@ -187,7 +187,7 @@
       {
         "id": "tech-quiz",
         "title": "Tech Quiz",
-        "img": "/civil/quiz.jpg",
+        
         "content": "Test Your Tech Knowledge",
         "description": "A quiz for the tech-savvy.",
         "time": "10 am to 12 (07/03/26)",
@@ -207,7 +207,7 @@
       {
         "id": "1-vs-1-coding",
         "title": "1 vs 1 Coding",
-        "img": "/general_tech_events/Speed_Typing.png",
+        "img": "/general_tech_events/code.jpeg",
         "content": "Head to Head Coding Battle",
         "description": "Prove your coding speed and logic.",
         "time": "1 pm to 4 pm (07/03/26)",
@@ -227,7 +227,7 @@
       {
         "id": "exhibition",
         "title": "Exhibition",
-        "img": "/civil/mould.png",
+       
         "content": "Projects, Tools & VR",
         "description": "Explore innovative projects and VR experiences.",
         "time": "1 pm to 4.30 pm (07/03/26)",
@@ -247,7 +247,7 @@
       {
         "id": "zine-workshop",
         "title": "Zine Workshop",
-        "img": "/cultural/themesho.jpg",
+        "img": "/cultural/zine.jpeg",
         "content": "Creative Workshop",
         "description": "Learn to make zines.",
         "time": "9 am to 12 (08/03/26)",
@@ -267,7 +267,7 @@
       {
         "id": "debate",
         "title": "Debate",
-        "img": "/cultural/voice.png",
+        
         "content": "Speak Your Mind",
         "description": "Debate competition.",
         "time": "9 am to 12 (08/03/26)",
@@ -287,7 +287,7 @@
       {
         "id": "wikichase",
         "title": "Wikichase",
-        "img": "/games/hunt.jpg",
+        
         "content": "Wiki Race",
         "description": "Race through Wikipedia pages.",
         "time": "1 pm to 3 pm (08/03/26)",
@@ -307,7 +307,7 @@
       {
         "id": "blind-coding",
         "title": "Blind Coding",
-        "img": "/general_tech_events/ZERO_ERROR.png",
+        "img": "/general_tech_events/blind.jpeg",
         "content": "Code Without Seeing",
         "description": "Can you code with your monitor off?",
         "time": "1 pm to 3 pm (08/03/26)",
@@ -327,7 +327,7 @@
       {
         "id": "culturals",
         "title": "Culturals",
-        "img": "/cultural/groupdance.png",
+        
         "content": "Cultural Night",
         "description": "Dance, Music and Fun.",
         "time": "4.30 pm to 9 pm (08/03/26)",

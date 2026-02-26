@@ -46,7 +46,7 @@ function Navlink(
                 ref={element} 
                 data-value={name} 
                 onClick={(e) => {
-                    setToggle(false);
+                    setToggle?.(false);
                     if (link.startsWith('/#') || link.startsWith('#')) {
                         // Allow time for menu to close or just handle scroll smoothly
                         const targetId = link.replace(/^\//, '');
