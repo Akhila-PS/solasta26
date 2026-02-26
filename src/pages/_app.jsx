@@ -15,6 +15,7 @@ import { motion } from "framer-motion";
 import { Analytics } from "@vercel/analytics/react";
 import InitialLoader from "@/components/InitialLoader";
 import CustomCursor from "@/components/CustomCursor";
+import { useRouter } from "next/router";
 
 const font_chakra = Chakra_Petch({
   subsets: ["latin"],
@@ -44,8 +45,11 @@ const font_clash_display = LocalFont({
 // });
 
 export default function MyApp({ Component, pageProps }) {
-  const [initialLoading, setInitialLoading] = React.useState(true);
+  const router = useRouter();
 
+const [initialLoading, setInitialLoading] = React.useState(
+  router.pathname === "/"
+);
   React.useEffect(() => {
     // Remove timer-based loading
     // setTimeout(() => {
