@@ -105,9 +105,9 @@
         "rules": {}
       },
       {
-        "id": "workshop",
-        "title": "Workshop",
-        
+        "id": "cyber-security-workshop",
+        "title": "Cyber Security Workshop",
+        "img": "/general_tech_events/cyber.jpeg",
         "content": "Technical Workshop",
         "description": "Enhance your skills with our expert-led workshop.",
         "time": "1 pm to 5 pm (06/03/26)",
@@ -147,7 +147,7 @@
       {
         "id": "reel-making",
         "title": "Reel Making",
-        
+        "img": "/general_tech_events/reel.jpeg",
         "content": "Reel Making Competition",
         "description": "Create the most engaging reels for Solasta'26.",
         "time": "6th to 8th",
@@ -287,7 +287,7 @@
       {
         "id": "wikichase",
         "title": "Wikichase",
-        
+        "img": "/general_tech_events/wiki.jpeg",
         "content": "Wiki Race",
         "description": "Race through Wikipedia pages.",
         "time": "1 pm to 3 pm (08/03/26)",

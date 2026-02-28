@@ -16,7 +16,7 @@ export const siteConfig = {
     },
     tagline: "TECH FEST",
     subtitle: "Where Code Meets Culture",
-    contactEmail: "contact@nssce.ac.in",
+    contactEmail: "stacs@nssce.ac.in",
     logoUrl: "/STACS-Logo.svg",
     targetDate: "2026-03-06T00:00:00",
     

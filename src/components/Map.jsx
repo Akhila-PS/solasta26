@@ -26,8 +26,8 @@ const socialLinks = [
   {
     icon: <AiOutlineGlobal size="1.3rem" />,
     label: "Website",
-    handle: "nssce.ac.in",
-    href: "https://nssce.ac.in/",
+    handle: "stacs-nssce",
+    href: "https://stacs-nssce.vercel.app/",
     gradient: "from-main_primary to-cyan-600",
   },
 ];
